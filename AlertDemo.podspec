@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Aung Bo Bo" => "bobomechatronics1@gmail.com" }
 
-  spec.platform     = :ios
+  spec.platform     = :ios, "11.0"
 
   spec.source       = { :git => "https://github.com/aungbobo1/AlertDemo.git", :tag => "#{spec.version}" }
 
