@@ -20,7 +20,7 @@ public class CustomAlert {
     
     public func showAlert(vc: UIViewController, alertType: AlertType, completion: (() -> Void)?) {
         
-        let storyboard = UIStoryboard(name: "CustomAlertStoryboard", bundle: .main)
+        let storyboard = UIStoryboard(name: "CustomAlertStoryboard", bundle: Bundle.init(for: type(of: self)))
         let alertVC = storyboard.instantiateViewController(withIdentifier: "CustomAlertVC") as! CustomAlertViewController
         
         switch alertType {
