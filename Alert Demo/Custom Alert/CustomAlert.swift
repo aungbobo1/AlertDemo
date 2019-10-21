@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-enum AlertType {
+public enum AlertType {
     case success
     case fail
 }
 
-class CustomAlert {
+public class CustomAlert {
     
-    static let shared = CustomAlert()
+    public static let shared = CustomAlert()
     
-    func showAlert(vc: UIViewController, alertType: AlertType, completion: (() -> Void)?) {
+    public func showAlert(vc: UIViewController, alertType: AlertType, completion: (() -> Void)?) {
         
         let storyboard = UIStoryboard(name: "CustomAlertStoryboard", bundle: .main)
         let alertVC = storyboard.instantiateViewController(withIdentifier: "CustomAlertVC") as! CustomAlertViewController
